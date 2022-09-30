@@ -1,0 +1,10 @@
+set terminal gif animate delay 1
+set output 'output.gif'
+
+stats 'f_num.x' nooutput
+set xrange [-1:1]
+set yrange [-1:1]
+
+do for [i=1:int(STATS_blocks)] {
+    plot 'f_num.x' index (i-1) w l, 'f_exc.x' index (i-1) w l
+}

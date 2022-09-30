@@ -1,0 +1,35 @@
+&Onditas_Input
+
+!============================================================
+! This is the input file, here are the parameters are defined
+!============================================================
+
+! Grid Data 
+
+res_num      = 1
+xmin         = -1.0
+xmax         = 1.0
+N_points_xx  = 400
+Ntt          = 2000
+courant      = 0.2
+every_1D_ini = 1
+
+! Initial wave data
+
+amp          = 1.0
+x0           = 0.0
+sigma        = 0.1
+
+integrator   = 'FTCS'
+!integrator   = 'LAXFRIEDRICHS'
+!integrator   = 'LEAPFROG'
+!integrator   = 'LAXWENDROFF'
+!integrator   = 'RUNGEKUTTACK'
+
+!boundary    = 'PERIODIC'
+!boundary   = 'OUTGOING'
+boundary   = 'INGOING'
+
+
+
+/

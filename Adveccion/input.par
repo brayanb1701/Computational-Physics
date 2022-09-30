@@ -1,0 +1,8 @@
+xmin = -1.0
+xmax = 1.0
+Nx = 1000
+Nt = 2000
+amp = 1.0
+sigma = 0.1
+x0 = 0.0
+courant = 0.5
